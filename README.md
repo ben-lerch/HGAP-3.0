@@ -1,4 +1,4 @@
-# HGAP-3.0
+# HGAP: Hierarchical Genome Assembly Process
 
 
 Table of contents
