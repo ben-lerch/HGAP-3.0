@@ -67,3 +67,18 @@ Once you have set your options, you are ready to run the HGAP software applicati
 ```
 pbsmrtpipe pbsmrtpipe.pipelines.polished_falcon_lean -e eid_subread:my.subreadset.xml --preset-xml=hgap_options.xml --preset-xml=global_options.xml
 ```
+
+## Advanced Analysis Options
+
+### SMRTLink/pbsmrtpipe Resequencing Options
+
+You may modify advanced analysis parameters for Resequencing as described below via SMRTLink.
+
+| Module |           Parameter (pbsmrtpipe_name)          |     Default      |  Explanation      |
+| ------ | -------------------------- | --------------------------- | ----------------- |
+|  | Min. accuracy (min_accuracy) | 70  | Minimum required alignment accuracy (percent) |
+|  | Concordant alignment (concordant) | False | Maps subreads of a ZMW to the same genomic region |
+|  | Hit policy (hit_policy) | randomBest  | Specify a policy for how to treat multiple hit random : selects a random hit. all : selects all hits. allbest : selects all the best score hits. randombest: selects a random hit from all best score hits. leftmost : selects a hit which has the best score and the smallest mapping coordinate in any reference. Default value is randombest. |
+|  | Algorithm options (algorithm_options) | -minMatch 12 -bestn 10 -minPctSimilarity 70.0  | List of space-separated arguments passed to blasr |
+|  | Minimum confidence (min_confidence) | 70  | The minimum confidence for a variant call to be output to variants.gff |
+|  | Min. accuracy (min_accuracy) | 70  | Minimum required alignment accuracy (percent) |
