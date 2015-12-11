@@ -80,5 +80,11 @@ You may modify advanced analysis parameters for Resequencing as described below 
 |  | Concordant alignment (concordant) | False | Maps subreads of a ZMW to the same genomic region |
 |  | Hit policy (hit_policy) | randomBest  | Specify a policy for how to treat multiple hit random : selects a random hit. all : selects all hits. allbest : selects all the best score hits. randombest: selects a random hit from all best score hits. leftmost : selects a hit which has the best score and the smallest mapping coordinate in any reference. Default value is randombest. |
 |  | Algorithm options (algorithm_options) | -minMatch 12 -bestn 10 -minPctSimilarity 70.0  | List of space-separated arguments passed to blasr |
-|  | Minimum confidence (min_confidence) | 70  | The minimum confidence for a variant call to be output to variants.gff |
-|  | Min. accuracy (min_accuracy) | 70  | Minimum required alignment accuracy (percent) |
+|  | Minimum confidence (min_confidence) | 40  | The minimum confidence for a variant call to be output to variants.gff |
+|  | Diploid mode (diploid) | True  | Enable detection of heterozygous variants |
+|  | Algorithm (algorithm) | quiver  | Algorithm name |
+|  | Minimum coverage (min_coverage) | 5  | The minimum site coverage that must be acheived for variant calls and consensus to be calculated for a site |
+|  | FALCON cfg overrides () |  | DEVELOPER OPTION |
+|  | Diploid mode (min_accuracy) | True  | Enable detection of heterozygous variants |
+|  | Diploid mode (min_accuracy) | True  | Enable detection of heterozygous variants |
+|  | Diploid mode (min_accuracy) | True  | Enable detection of heterozygous variants |
