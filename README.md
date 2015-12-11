@@ -85,6 +85,8 @@ You may modify advanced analysis parameters for Resequencing as described below 
 |  | Algorithm (algorithm) | quiver  | Algorithm name |
 |  | Minimum coverage (min_coverage) | 5  | The minimum site coverage that must be acheived for variant calls and consensus to be calculated for a site |
 |  | FALCON cfg overrides () |  | DEVELOPER OPTION |
-|  | Diploid mode (min_accuracy) | True  | Enable detection of heterozygous variants |
-|  | Diploid mode (min_accuracy) | True  | Enable detection of heterozygous variants |
-|  | Diploid mode (min_accuracy) | True  | Enable detection of heterozygous variants |
+|  | Genome length (HGAP_GenomeLength_str) | 5000000  | Approx. number of base pairs expected in the genome. We choose other settings automatically based on this. (To learn what we generate, see fc_*.cfg, currently called 'falcon_ns.tasks.task_falcon0_build_rbd-PacBio.FileTypes.txt' amongst output files.) |
+|  | Cores Max (HGAP_CoresMax_str) | 40  | IGNORE- Not currently used |
+|  | Number of regions (absent) | 1000  | Desired number of genome regions in the summary statistics (used for guidance, not strict) |
+|  | Region size (absent) | 0  | If supplied, use a fized genomic region size |
+|  | Force the number of regions (absent) | False  | If supplied, then try to use this number (max value=40000) of regions per reference, otherwise the coverage summary report will optimize the number of regions in the case of many references. Not compatible with a fixed region size. |
