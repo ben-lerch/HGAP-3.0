@@ -22,6 +22,8 @@ Analyses are performed in two stages: FALCON, and Polishing.
 
 ##Running with SMRTLink
 
+To run Isoseq using SMRTLink, follow the usual steps for analysing data on SMRTLink. TODO: Link to document explaining SMRTLink.
+
 ##Running on the Command-Line with pbsmrtpipe
 ###Install pbsmrtpipe
 pbsmrtpipe is a part of `smrtanalysis-3.0` package and will be installed
