@@ -16,6 +16,8 @@ Table of contents
 
 #Overview
 
+Analyses are performed in two stages: FALCON, and Polishing. 
+
 #Manual
 
 ##Running with SMRTLink
