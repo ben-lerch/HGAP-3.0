@@ -1,6 +1,7 @@
 # HGAP: Hierarchical Genome Assembly Process
 
 
+
 Table of contents
 =================
 
@@ -16,7 +17,15 @@ Table of contents
 
 #Overview
 
-Analyses are performed in two stages: FALCON, and Polishing. 
+A "Hierarchical Genome Assembly Process" is constituted of the following steps
+for generating a genome assembly from a set of sequencing reads:
+
+* Raw sub-reads overlapping for error correction
+* Pre-assembly and error correction
+* Overlapping detection of the error corrected reads
+* Overlap filtering
+* Constructing graph from overlaps
+* Constructing contig from graph
 
 #Manual
 
