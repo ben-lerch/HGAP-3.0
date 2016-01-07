@@ -87,19 +87,19 @@ pbsmrtpipe pbsmrtpipe.pipelines.polished_falcon_lean -e eid_subread:my.subreadse
 
 You may modify advanced analysis parameters for Resequencing as described below via SMRTLink.
 
-| Module |           Parameter (pbsmrtpipe_name)          |     Default      |  Explanation      |
-| ------ | -------------------------- | --------------------------- | ----------------- |
-|  | Min. accuracy (min_accuracy) | 70  | Minimum required alignment accuracy (percent) |
-|  | Concordant alignment (concordant) | False | Maps subreads of a ZMW to the same genomic region |
-|  | Hit policy (hit_policy) | randomBest  | Specify a policy for how to treat multiple hit random : selects a random hit. all : selects all hits. allbest : selects all the best score hits. randombest: selects a random hit from all best score hits. leftmost : selects a hit which has the best score and the smallest mapping coordinate in any reference. Default value is randombest. |
-|  | Algorithm options (algorithm_options) | -minMatch 12 -bestn 10 -minPctSimilarity 70.0  | List of space-separated arguments passed to blasr |
-|  | Minimum confidence (min_confidence) | 40  | The minimum confidence for a variant call to be output to variants.gff |
-|  | Diploid mode (diploid) | True  | Enable detection of heterozygous variants |
-|  | Algorithm (algorithm) | quiver  | Algorithm name |
-|  | Minimum coverage (min_coverage) | 5  | The minimum site coverage that must be acheived for variant calls and consensus to be calculated for a site |
-|  | FALCON cfg overrides () |  | DEVELOPER OPTION |
-|  | Genome length (HGAP_GenomeLength_str) | 5000000  | Approx. number of base pairs expected in the genome. We choose other settings automatically based on this. (To learn what we generate, see fc_*.cfg, currently called 'falcon_ns.tasks.task_falcon0_build_rbd-PacBio.FileTypes.txt' amongst output files.) |
-|  | Cores Max (HGAP_CoresMax_str) | 40  | IGNORE- Not currently used |
-|  | Number of regions (absent) | 1000  | Desired number of genome regions in the summary statistics (used for guidance, not strict) |
-|  | Region size (absent) | 0  | If supplied, use a fized genomic region size |
-|  | Force the number of regions (absent) | False  | If supplied, then try to use this number (max value=40000) of regions per reference, otherwise the coverage summary report will optimize the number of regions in the case of many references. Not compatible with a fixed region size. |
+|           Parameter (pbsmrtpipe_name)          |     Default      |  Explanation      |
+| -------------------------- | --------------------------- | ----------------- |
+| Min. accuracy (min_accuracy) | 70  | Minimum required alignment accuracy (percent) |
+| Concordant alignment (concordant) | False | Maps subreads of a ZMW to the same genomic region |
+| Hit policy (hit_policy) | randomBest  | Specify a policy for how to treat multiple hit random : selects a random hit. all : selects ll hits. allbest : selects all the best score hits. randombest: selects a random hit from all best score hits. leftmost : selects a hit which has the best score and the smallest mapping coordinate in any reference. Default value is randombest. |
+| Algorithm options (algorithm_options) | -minMatch 12 -bestn 10 -minPctSimilarity 70.0  | List of space-separated arguments passed to blasr |
+| Minimum confidence (min_confidence) | 40  | The minimum confidence for a variant call to be output to variants.gff |
+| Diploid mode (diploid) | True  | Enable detection of heterozygous variants |
+| Algorithm (algorithm) | quiver  | Algorithm name |
+| Minimum coverage (min_coverage) | 5  | The minimum site coverage that must be acheived for variant calls and consensus to be calculated for a site |
+| FALCON cfg overrides () |  | DEVELOPER OPTION |
+| Genome length (HGAP_GenomeLength_str) | 5000000  | Approx. number of base pairs expected in the genome. We choose other settings automatically based on this. (To learn what we generate, see fc_*.cfg, currently called 'falcon_ns.tasks.task_falcon0_build_rbd-PacBio.FileTypes.txt' amongst output files.) |
+| Cores Max (HGAP_CoresMax_str) | 40  | IGNORE- Not currently used |
+| Number of regions (absent) | 1000  | Desired number of genome regions in the summary statistics (used for guidance, not strict) |
+| Region size (absent) | 0  | If supplied, use a fized genomic region size |
+| Force the number of regions (absent) | False  | If supplied, then try to use this number (max value=40000) of regions per reference, otherwise the coverage summary report will optimize the number of regions in the case of many references. Not compatible with a fixed region size. |
