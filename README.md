@@ -103,3 +103,5 @@ You may modify advanced analysis parameters for Resequencing as described below 
 | Number of regions (absent) | 1000  | Desired number of genome regions in the summary statistics (used for guidance, not strict) |
 | Region size (absent) | 0  | If supplied, use a fized genomic region size |
 | Force the number of regions (absent) | False  | If supplied, then try to use this number (max value=40000) of regions per reference, otherwise the coverage summary report will optimize the number of regions in the case of many references. Not compatible with a fixed region size. |
+
+#Algorithm Modules
