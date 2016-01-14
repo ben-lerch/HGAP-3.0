@@ -105,3 +105,5 @@ You may modify advanced analysis parameters for Resequencing as described below 
 | Force the number of regions (absent) | False  | If supplied, then try to use this number (max value=40000) of regions per reference, otherwise the coverage summary report will optimize the number of regions in the case of many references. Not compatible with a fixed region size. |
 
 #Algorithm Modules
+
+The overall workflow for HGAP is as follows. Filter subreads. Find all subread overlaps. Do error correction. Find all subread overlaps again. Compute optimal paths connecting the reads through overlaps and track breaks between paths. Generate a consensus sequence for each complete path. Refine the assembly, fixing small SNP-type errors. 
