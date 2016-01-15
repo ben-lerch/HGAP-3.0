@@ -7,10 +7,10 @@ Table of contents
 
   * [Overview](#overview)
   * [Manual](#manual)
-    * [Running with SMRTLink](#running-with-smrtlink)
+    * [Running with SMRT Link](#running-with-smrt-link)
     * [Running on the Command Line with pbsmrtpipe](#running-on-the-command-line-with-pbsmrtpipe)
   * [Advanced Analysis Options](#advanced-analysis-options)
-    * [SMRTLink/pbsmrtpipe HGAP Options](#smrtlinkpbsmrtpipe-resequencing-options)
+    * [SMRT Link/pbsmrtpipe HGAP Options](#smrt-linkpbsmrtpipe-resequencing-options)
   * [Files](#files)
   * [Algorithm Modules](#algorithm-modules)
   * [Glossary](#glossary)
@@ -29,9 +29,9 @@ for generating a genome assembly from a set of sequencing reads:
 
 #Manual
 
-##Running with SMRTLink
+##Running with SMRT Link
 
-To run Isoseq using SMRTLink, follow the usual steps for analysing data on SMRTLink. TODO: Link to document explaining SMRTLink.
+To run Isoseq using SMRT Link, follow the usual steps for analysing data on SMRT Link. TODO: Link to document explaining SMRT Link.
 
 ##Running on the Command-Line with pbsmrtpipe
 ###Install pbsmrtpipe
@@ -83,7 +83,7 @@ pbsmrtpipe pbsmrtpipe.pipelines.polished_falcon_lean -e eid_subread:my.subreadse
 
 ## Advanced Analysis Options
 
-### SMRTLink/pbsmrtpipe Resequencing Options
+### SMRT Link/pbsmrtpipe Resequencing Options
 
 You may modify advanced analysis parameters for Resequencing as described below via SMRTLink.
 
