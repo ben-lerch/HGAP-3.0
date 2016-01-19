@@ -39,7 +39,7 @@ Analyses are performed in two basic stages: FALCON and Polishing.
 
 ##Running with SMRT Link
 
-To run Isoseq using SMRT Link, follow the usual steps for analysing data on SMRT Link. TODO: Link to document explaining SMRT Link.
+To run HGAP using SMRT Link, follow the usual steps for analysing data on SMRT Link. TODO: Link to document explaining SMRT Link.
 
 ##Running on the Command-Line with pbsmrtpipe
 ###Install pbsmrtpipe
@@ -54,7 +54,7 @@ You can verify that pbsmrtpipe is running OK by:
 Now create an XML file from your subreads.
 
 ```
-dataset create --type SubreadSet my.subreadset.xml subreads1.bam subreads2.bam ...
+dataset create --type SubreadSet --generateIndices my.subreadset.xml subreads1.bam subreads2.bam ...
 ```
 This will create a file called `my.subreadset.xml`. 
 
