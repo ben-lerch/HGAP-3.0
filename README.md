@@ -28,13 +28,6 @@ Analyses are performed in two basic stages: FALCON and Polishing.
 * __Polishing__
   * Polishing takes as input a set of subreads and the draft assembly produced by FALCON and produces a polished assembly. Polishing is in fact the same pipeline as Resequencing. It proceeds by aligning the subreads to the draft assembly with PBAlign, and then building a consensus sequence (the polished assembly) using variantCaller. The details of the Resequencing pipeline have been described [here](https://github.com/ben-lerch/Resequencing-3.0/blob/master/README.md).  
 
-* Raw sub-reads overlapping for error correction
-* Pre-assembly and error correction
-* Overlapping detection of the error corrected reads
-* Overlap filtering
-* Constructing graph from overlaps
-* Constructing contig from graph
-
 #Manual
 
 ##Running with SMRT Link
@@ -114,4 +107,6 @@ You may modify advanced analysis parameters for Resequencing as described below 
 
 #Algorithm Modules
 
-The overall workflow for HGAP is as follows. Filter subreads. Find all subread overlaps. Do error correction. Find all subread overlaps again. Compute optimal paths connecting the reads through overlaps and track breaks between paths. Generate a consensus sequence for each complete path. Refine the assembly, fixing small SNP-type errors. Align raw subreads to draft contigs. Use alignments to refine draft contigs, correcting miscalls to generate a polished assembly.
+##FALCON
+
+The overall workflow for FALCON is as follows. Filter subreads. Find all subread overlaps. Do error correction. Find all subread overlaps again. Compute optimal paths connecting the reads through overlaps and track breaks between paths. Generate a consensus sequence for each complete path. Refine the assembly, fixing small SNP-type errors. Align raw subreads to draft contigs. Use alignments to refine draft contigs, correcting miscalls to generate a polished assembly.
