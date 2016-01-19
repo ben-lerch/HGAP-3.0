@@ -17,7 +17,7 @@ Table of contents
 
 #Overview
 
-![hgap](https://cloud.githubusercontent.com/assets/12494820/12428209/3649f2e0-be98-11e5-8224-f549501f8253.png)
+![hgap](https://cloud.githubusercontent.com/assets/12494820/12428471/9248383a-be99-11e5-9473-ac5b5bb628af.png)
 
 
 
