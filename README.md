@@ -21,8 +21,12 @@ Table of contents
 
 
 
-A "Hierarchical Genome Assembly Process" is constituted of the following steps
-for generating a genome assembly from a set of sequencing reads:
+Analyses are performed in two basic stages: FALCON and Polishing. 
+
+* __FALCON__
+  * FALCON takes as input a set of subreads and produces a draft assembly as output. 
+* __Polishing__
+  * Resequencing takes as input 
 
 * Raw sub-reads overlapping for error correction
 * Pre-assembly and error correction
