@@ -101,7 +101,7 @@ You may modify advanced analysis parameters for Resequencing as described below 
 |Consensus   | Algorithm (algorithm) | quiver  | Algorithm name |
 |Consensus   | Minimum coverage (min_coverage) | 5  | The minimum site coverage that must be acheived for variant calls and consensus to be calculated for a site |
 |SMRT Pipe   | Minimum subread length | 0 | Minimum length of subreads to write to FASTA/FASTQ |  
-|Assembly    | FALCON cfg overrides () |  | DEVELOPER OPTION |
+|Assembly    | FALCON cfg overrides () |  | This is intended to allow support engineers to override the cfg which we will generate from other options. It is a semicolon-separated list of key=val pairs. Newlines are allowed but ignored. For more details on the available options see the [falcon manual](https://github.com/PacificBiosciences/FALCON/wiki/Manual) |
 |Assembly    | Cores Max Ignored (HGAP_CoresMax_str) | 40  | IGNORE- Not currently used |
 |Reports     |  Number of regions (absent) | 1000  | Desired number of genome regions in the summary statistics (used for guidance, not strict) |
 |Reports     | Region size (absent) | 0  | If supplied, use a fixed genomic region size |
