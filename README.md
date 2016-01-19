@@ -17,6 +17,10 @@ Table of contents
 
 #Overview
 
+![hgap](https://cloud.githubusercontent.com/assets/12494820/12428209/3649f2e0-be98-11e5-8224-f549501f8253.png)
+
+
+
 A "Hierarchical Genome Assembly Process" is constituted of the following steps
 for generating a genome assembly from a set of sequencing reads:
 
