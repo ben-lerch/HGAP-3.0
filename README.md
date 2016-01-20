@@ -111,7 +111,14 @@ You may modify advanced analysis parameters for Resequencing as described below 
 
 ##FALCON
 
-The overall workflow for FALCON is as follows. Filter subreads. Find all subread overlaps. Do error correction. Find all subread overlaps again. Compute optimal paths connecting the reads through overlaps and track breaks between paths. Generate a consensus sequence for each complete path.  
+FALCON proceeds with the following steps to generate a draft genome assembly from a set of sequencing reads:
+
+* Raw sub-reads overlapping for error correction
+* Pre-assembly and error correction
+* Overlapping detection of the error corrected reads
+* Overlap filtering
+* Constructing graph from overlaps
+* Constructing contig from graph
 
 ##Polishing
 The polishing algorithm module is actually the same as Resequencing. Polishing proceeds by aligning raw subreads to the draft contigs. Then the alignments are used to refine the draft contigs, correcting miscalls to generate a polished assembly.
