@@ -138,11 +138,11 @@ Some sequences are removed if they are thought to be too difficult to resolve, s
 
 ####Constructing graph from overlaps
 
-Compute optimal paths connecting the reads through overlaps and track breaks between paths. 
+Optimal paths connecting the reads through overlaps are computed and breaks between paths are tracked. 
 
 ####Constructing contig from graph
 
-Generate a consensus sequence for each complete path. These consensus sequences are the draft assembly.
+A consensus sequence for each complete path is generated. These consensus sequences are the draft assembly.
 
 ##Polishing
 The polishing algorithm module is actually the same as Resequencing. Polishing proceeds by aligning raw subreads to the draft assembly. Then the alignments are used to refine the draft assembly, correcting miscalls to generate a polished assembly. Details of the Resequencing algorithms are available [here](https://github.com/ben-lerch/Resequencing-3.0/blob/master/README.md#algorithm-modules).
