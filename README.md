@@ -142,7 +142,7 @@ Compute optimal paths connecting the reads through overlaps and track breaks bet
 
 ####Constructing contig from graph
 
-Generate a consensus sequence for each complete path.
+Generate a consensus sequence for each complete path. These consensus sequences are the draft assembly.
 
 ##Polishing
 The polishing algorithm module is actually the same as Resequencing. Polishing proceeds by aligning raw subreads to the draft contigs. Then the alignments are used to refine the draft contigs, correcting miscalls to generate a polished assembly. Details of the Resequencing algorithms are available [here](https://github.com/ben-lerch/Resequencing-3.0/blob/master/README.md#algorithm-modules).
