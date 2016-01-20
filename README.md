@@ -121,4 +121,4 @@ FALCON proceeds with the following steps to generate a draft genome assembly fro
 * Constructing contig from graph
 
 ##Polishing
-The polishing algorithm module is actually the same as Resequencing. Polishing proceeds by aligning raw subreads to the draft contigs. Then the alignments are used to refine the draft contigs, correcting miscalls to generate a polished assembly.
+The polishing algorithm module is actually the same as Resequencing. Polishing proceeds by aligning raw subreads to the draft contigs. Then the alignments are used to refine the draft contigs, correcting miscalls to generate a polished assembly. Details of the Resequencing algorithms are available [here](https://github.com/ben-lerch/Resequencing-3.0/blob/master/README.md#algorithm-modules).
