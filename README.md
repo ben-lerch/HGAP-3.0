@@ -126,5 +126,23 @@ FALCON employs a modified version of Gene Meyer's DAligner to compute overlaps b
 
 ####Pre-assembly and error correction
 
+The longest reads are polished by using the overlap information from the previous step to correct errors in the longest reads. This generates a set of polished reads, called p-reads.
+
+####Overlapping detection of the error corrected reads
+
+The p-reads are overlapped using DAligner.
+
+####Overlap filtering
+
+Some sequences are removed if they are thought to be too difficult to resolve, such as repeat regions.
+
+####Constructing graph from overlaps
+
+Compute optimal paths connecting the reads through overlaps and track breaks between paths. 
+
+####Constructing contig from graph
+
+Generate a consensus sequence for each complete path.
+
 ##Polishing
 The polishing algorithm module is actually the same as Resequencing. Polishing proceeds by aligning raw subreads to the draft contigs. Then the alignments are used to refine the draft contigs, correcting miscalls to generate a polished assembly. Details of the Resequencing algorithms are available [here](https://github.com/ben-lerch/Resequencing-3.0/blob/master/README.md#algorithm-modules).
