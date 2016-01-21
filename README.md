@@ -134,7 +134,7 @@ The p-reads are overlapped using DAligner.
 
 ####Overlap filtering
 
-Some filtering of the p-reads is done. Reads with coverage at the 5' or 3' end that is well above the average coverage of the read may be removed, as this is a signal that the read has a repeat at 5' or 3' end. If a read is fully contained within another read it may be removed, as it is not necessary for graph construction. 
+Some filtering of the p-reads is done. Reads with coverage at the 5' or 3' end that is well above the average coverage of the read may be removed, as this is a signal that the read has a repeat at 5' or 3' end. If a read is fully contained within another read it may be removed, as it is not necessary for graph construction. Reads which have very low coverage at one of its ends may also be filtered out, as they tend to be filtered out in the graphing step, anyway, due to the fact that they often add excessive complexity to the graph. 
 
 ####Constructing graph from overlaps
 
