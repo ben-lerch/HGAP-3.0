@@ -134,7 +134,7 @@ The p-reads are overlapped using DAligner.
 
 ####Overlap filtering
 
-Some sequences are removed if they are thought to be too difficult to resolve, such as repeat regions.
+Some filtering of the p-reads is done. Reads with coverage at the 5' or 3' end that is well above the average coverage of the read may be removed, as this is a signal that the read has a repeat at 5' or 3' end. If a read is fully contained within another read it may be removed, as it is not necessary for graph construction. 
 
 ####Constructing graph from overlaps
 
