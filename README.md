@@ -24,7 +24,7 @@ Table of contents
 Analyses are performed in two basic stages: FALCON and Polishing. 
 
 * __FALCON__
-  * FALCON takes as input a set of subreads and produces a draft assembly as output. 
+  * FALCON takes as input a set of subreads and produces a draft assembly FASTA as output. FALCON uses the [DAligner](https://dazzlerblog.wordpress.com/command-guides/daligner-command-reference-guide/) algorithm to compute overlaps between every subread with every other subread. The longest subreads are then error-corrected producing a set of so-called polished reads. The polished reads are aligned against each other and a draft assembly is then made based on these alignments. 
 * __Polishing__
   * Polishing takes as input a set of subreads and the draft assembly produced by FALCON and produces a polished assembly. Polishing is in fact the same pipeline as Resequencing. It proceeds by aligning the subreads to the draft assembly with PBAlign, and then building a consensus sequence (the polished assembly) using variantCaller. The details of the Resequencing pipeline have been described [here](https://github.com/ben-lerch/Resequencing-3.0/blob/master/README.md).  
 
