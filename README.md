@@ -122,7 +122,7 @@ FALCON proceeds with the following steps to generate a draft genome assembly fro
 
 ####Raw sub-reads overlapping for error correction
 
-FALCON employs a modified version of Gene Meyer's DAligner to compute overlaps between every subread with every other subread in the dataset. First, basic filtering is applied to the subreads. Then the subreads are converted to a Dazzler database and the database is split. Then the core DAligner algorithm is used to compute overlaps. 
+FALCON employs a modified version of Gene Meyer's [DAligner](https://dazzlerblog.wordpress.com/command-guides/daligner-command-reference-guide/) to compute overlaps between every subread with every other subread in the dataset. First, basic filtering is applied to the subreads. Then the subreads are converted to a Dazzler database and the database is split. Then the core DAligner algorithm is used to compute overlaps. 
 
 ####Pre-assembly and error correction
 
