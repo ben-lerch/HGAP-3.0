@@ -24,7 +24,7 @@ Table of contents
 Analyses are performed in two basic stages: FALCON and Polishing. 
 
 * __FALCON__
-  * FALCON takes as input a set of subreads and produces a draft assembly FASTA as output. FALCON uses the [DAligner](https://dazzlerblog.wordpress.com/command-guides/daligner-command-reference-guide/) algorithm to compute overlaps between every subread with every other subread. The longest subreads are then error-corrected producing a set of so-called polished reads. The polished reads are aligned against each other and a draft assembly is then made based on these alignments. 
+  * FALCON takes as input a set of subreads and produces a draft assembly FASTA as output. FALCON uses the [daligner](https://dazzlerblog.wordpress.com/command-guides/daligner-command-reference-guide/) algorithm to compute overlaps between every subread with every other subread. The longest subreads are then error-corrected producing a set of so-called polished reads. The polished reads are aligned against each other and a draft assembly is then made based on these alignments. 
 * __Polishing__
   * Polishing takes as input a set of subreads and the draft assembly produced by FALCON and produces a polished assembly. Polishing is in fact the same pipeline as Resequencing. It proceeds by aligning the subreads to the draft assembly with PBAlign, and then building a consensus sequence (the polished assembly) using variantCaller. The details of the Resequencing pipeline have been described [here](https://github.com/ben-lerch/Resequencing-3.0/blob/master/README.md).  
 
@@ -122,7 +122,7 @@ FALCON proceeds with the following steps to generate a draft genome assembly fro
 
 ####Raw sub-reads overlapping for error correction
 
-FALCON employs a modified version of Gene Meyer's [DAligner](https://dazzlerblog.wordpress.com/command-guides/daligner-command-reference-guide/) to compute overlaps between every subread with every other subread in the dataset. First, basic filtering is applied to the subreads. Then the subreads are converted to a Dazzler database and the database is split. Then the core DAligner algorithm is used to compute overlaps. 
+FALCON employs a modified version of Gene Meyer's [daligner](https://dazzlerblog.wordpress.com/command-guides/daligner-command-reference-guide/) to compute overlaps between every subread with every other subread in the dataset. First, basic filtering is applied to the subreads. Then the subreads are converted to a Dazzler database and the database is split. Then the core daligner algorithm is used to compute overlaps. 
 
 ####Pre-assembly and error correction
 
@@ -130,7 +130,7 @@ The longest reads are polished by using the overlap information from the previou
 
 ####Overlapping detection of the error corrected reads
 
-The p-reads are overlapped using DAligner.
+The p-reads are overlapped using daligner.
 
 ####Overlap filtering
 
