@@ -147,7 +147,7 @@ Contigs are computed in several stages.
 
 ####Constructing contig from graph
 
-A consensus sequence for each complete path through the contig graph is generated. These consensus sequences are the draft assembly.
+A consensus sequence for each complete path through the contig graph is generated. The end-to-end path with the most overlapped bases is considered the primary contig, and all other paths are associated contigs. 
 
 ##Polishing
 The polishing algorithm module is actually the same as Resequencing. Polishing proceeds by aligning raw subreads to the draft assembly. Then the alignments are used to refine the draft assembly, correcting miscalls to generate a polished assembly. Details of the Resequencing algorithms are available [here](https://github.com/ben-lerch/Resequencing-3.0/blob/master/README.md#algorithm-modules).
