@@ -140,7 +140,7 @@ Some filtering of the p-reads is done. Reads with coverage at the 5' or 3' end t
 
 Contigs are computed in several stages. 
 
-* Overlap information is used to construct a string graph
+* Overlap information is used to construct a string graph.
 * The string graph is reduced in complexity. 
 * The string graph is used to construct a unitig graph. 
 * The unitig graph is used to construct a contig graph. 
