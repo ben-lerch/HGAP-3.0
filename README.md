@@ -11,7 +11,7 @@ Table of contents
     * [Running on the Command Line with pbsmrtpipe](#running-on-the-command-line-with-pbsmrtpipe)
   * [Advanced Analysis Options](#advanced-analysis-options)
     * [SMRT Link/pbsmrtpipe HGAP Options](#smrt-linkpbsmrtpipe-resequencing-options)
-    * [Dev-Ops Options]()
+    * [Dev-Ops Options](dev-ops-options)
   * [Files](#files)
   * [Algorithm Modules](#algorithm-modules)
   * [Glossary](#glossary)
