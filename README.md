@@ -11,6 +11,7 @@ Table of contents
     * [Running on the Command Line with pbsmrtpipe](#running-on-the-command-line-with-pbsmrtpipe)
   * [Advanced Analysis Options](#advanced-analysis-options)
     * [SMRT Link/pbsmrtpipe HGAP Options](#smrt-linkpbsmrtpipe-resequencing-options)
+    * [Dev-Ops Options]()
   * [Files](#files)
   * [Algorithm Modules](#algorithm-modules)
   * [Glossary](#glossary)
@@ -106,6 +107,10 @@ You may modify advanced analysis parameters for Resequencing as described below 
 |Reports     |  Number of regions (absent) | 1000  | Desired number of genome regions in the summary statistics (used for guidance, not strict) |
 |Reports     | Region size (absent) | 0  | If supplied, use a fixed genomic region size |
 |Reports     | Force the number of regions (absent) | False  | If supplied, then try to use this number (max value=40000) of regions per reference, otherwise the coverage summary report will optimize the number of regions in the case of many references. Not compatible with a fixed region size. |
+
+###Dev-Ops Options
+
+There is additional information on HGAP options which can be useful for dev-ops engineers. That information is [here](https://github.com/PacificBiosciences/FALCON/wiki/Options).
 
 #Algorithm Modules
 
