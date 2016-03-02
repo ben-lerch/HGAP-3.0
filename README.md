@@ -15,6 +15,7 @@ Table of contents
   * [Files](#files)
   * [Algorithm Modules](#algorithm-modules)
   * [Glossary](#glossary)
+  * [Troubleshooting](#troubleshooting)
 
 #Overview
 
@@ -156,3 +157,21 @@ A contig for each complete path through the contig graph is generated. The compl
 
 ##Polishing
 The polishing algorithm module is actually the same as Resequencing. Polishing proceeds by aligning raw subreads to the draft assembly. Then the alignments are used to refine the draft assembly, correcting miscalls to generate a polished assembly. Details of the Resequencing algorithms are available [here](https://github.com/ben-lerch/Resequencing-3.0/blob/master/README.md#algorithm-modules).
+
+#Troubleshooting
+
+__What if the raw accuracy is too low for a decent assembly?__
+
+* Try to reduce min_idt for fc_ovlp_to_graph. In 'Advanced Analysis Parameters' -> 'Assembly' -> 'Falcon cfg options', include:
+
+  fc_ovlp_to_graph_option=--min_idt 70;
+
+  (Default is 96).
+
+* Try to filter out any overly long reads, since they are probably something like chimera. In 'Advanced Analysis Parameters', 'Filters to add to the dataset':
+
+  rq >= 0.7, length <= 50000
+
+Anything longer than 50k is probably not a good read anyway. (Note: gte and lte can be used instead of >= and <=. Or, &gt;= and &lt;= from HTML4. Default is
+
+  rq >= 0.7
